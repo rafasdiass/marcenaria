@@ -1,0 +1,93 @@
+@import '../../../../styles.scss';
+
+.navbar {
+  background-color: $bg-color-light;
+  color: $text-color-dark;
+  padding: 0.5rem 1rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar-logo {
+      width: $element-width-large;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .navbar-collapse {
+      justify-content: center; /* Centraliza o conteúdo do menu */
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $border-color-light;
+    color: $button-color-dark;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: none;
+
+      &::before {
+        content: '\2630'; /* Unicode character for the hamburger icon */
+        color: $button-color-dark;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row; /* Garante que os itens estejam em linha */
+    align-items: center;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 100%; /* Garante que o ul ocupe todo o espaço disponível */
+    padding-left: 0;
+
+    .nav-item {
+      margin-bottom: 0.5rem; // Espaço entre itens no mobile
+
+      @media (min-width: 992px) {
+        margin-bottom: 0; // Remove o espaço entre itens no desktop
+      }
+
+      .nav-link {
+        color: $text-color-dark;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        border-radius: 4px;
+
+        i {
+          margin-right: 0.5rem;
+          color: $icon-color-dark;
+          transition: color 0.2s ease-in-out;
+        }
+
+        &:hover {
+          color: $primary-hover-color;
+          background-color: rgba($primary-hover-color, 0.1); // Suave destaque ao fundo
+          i {
+            color: $primary-hover-color;
+          }
+        }
+      }
+
+      &.active .nav-link {
+        color: $primary-hover-color;
+        font-weight: bold;
+        i {
+          color: $primary-hover-color;
+        }
+      }
+    }
+  }
+}
