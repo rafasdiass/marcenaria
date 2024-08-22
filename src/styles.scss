@@ -1,16 +1,30 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-
-
-
 // Fontes
 $font-family-base: 'Montserrat', sans-serif;
 
+// Cores
 $bg-color-light: #f8f9fa;
 $text-color-dark: #343a40;
-$primary-hover-color: #0056b3;
+$primary-color: #007bff; // Azul padrão para botões e destaques
+$primary-hover-color: #0056b3; // Azul escuro para hover
+$secondary-color: #6c757d; // Cinza para textos secundários
 $border-color-light: #e9ecef;
 $icon-color-dark: #6c757d;
+$bg-color-dark: #343a40; // Cor de fundo alternativa mais escura
+
+// Dimensões e Espaçamentos
 $element-width-large: 120px;
 $button-color-dark: #343a40;
+$border-radius-default: 4px;
+$padding-default: 1rem;
+$box-shadow-default: 0 2px 5px rgba(0, 0, 0, 0.1);
+$box-shadow-hover: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+// Estilos de Texto
+$font-size-base: 1rem;
+$font-size-large: 1.5rem;
+$font-size-small: 0.875rem;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
