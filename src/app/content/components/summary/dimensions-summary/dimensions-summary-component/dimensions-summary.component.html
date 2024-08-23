@@ -1,1 +1,7 @@
-<p>dimensions-summary-component works!</p>
+<div class="dimensions-container">
+    <div *ngFor="let measure of measures" class="dimension-input">
+      <label [for]="measure.label">{{ measure.label }} ({{ measure.unit }})</label>
+      <input type="number" [id]="measure.label" [(ngModel)]="measure.value" (input)="onMeasureUpdate()" />
+    </div>
+  </div>
+  
