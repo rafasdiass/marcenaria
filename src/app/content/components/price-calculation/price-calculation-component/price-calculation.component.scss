@@ -1,0 +1,40 @@
+.price-calculation {
+    padding: 20px;
+    background-color: $bg-color-light;
+    border-radius: $border-radius-default;
+    box-shadow: $box-shadow-default;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 20px;
+      color: $text-color-dark;
+      font-size: 1.5rem;
+    }
+  
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-weight: $font-weight-bold;
+      color: #fff;
+      background-color: $primary-color;
+      border: none;
+      border-radius: $border-radius-default;
+      transition: background-color 0.2s ease-in-out;
+  
+      i {
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+      }
+  
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  
+    .price-display {
+      margin-top: 20px;
+    }
+  }
+  

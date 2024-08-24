@@ -1,1 +1,12 @@
-<p>product-type-component works!</p>
+<div class="product-type-container">
+    <h4>Selecione o Tipo de Produto:</h4>
+    <ul class="list-group">
+      <li 
+        *ngFor="let type of productTypes"
+        class="list-group-item"
+        (click)="onSelectType(type)">
+        {{ type }}
+      </li>
+    </ul>
+  </div>
+  

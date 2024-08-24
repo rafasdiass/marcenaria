@@ -1,1 +1,31 @@
-<p>summary-component works!</p>
+<div class="summary">
+    <h2 class="mb-4"><i class="bi bi-list-check"></i> Resumo Final</h2>
+  
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <app-product-summary 
+          [product]="selectedProduct" 
+          class="h-100">
+        </app-product-summary>
+      </div>
+      <div class="col-md-4 mb-3">
+        <app-dimensions-summary 
+          [measures]="measures" 
+          class="h-100">
+        </app-dimensions-summary>
+      </div>
+      <div class="col-md-4 mb-3">
+        <app-price-summary 
+          [totalPrice]="totalPrice" 
+          class="h-100">
+        </app-price-summary>
+      </div>
+    </div>
+  
+    <div class="text-center mt-4">
+      <button class="btn btn-primary btn-lg">
+        <i class="bi bi-check-circle"></i> Finalizar Pedido
+      </button>
+    </div>
+  </div>
+  

@@ -1,1 +1,14 @@
-<p>product-summary-component works!</p>
+<div class="product-summary card">
+    <div class="card-header">
+      <h4><i class="bi bi-box-seam"></i> Resumo do Produto</h4>
+    </div>
+    <div class="card-body">
+      <p *ngIf="product">
+        <strong>Produto:</strong> {{ product.name }}<br>
+        <strong>Descrição:</strong> {{ product.description }}<br>
+        <strong>Preço por m²:</strong> R$ {{ product.pricePerSquareMeter | number:'1.2-2' }}
+      </p>
+      <p *ngIf="!product" class="text-muted">Nenhum produto selecionado.</p>
+    </div>
+  </div>
+  

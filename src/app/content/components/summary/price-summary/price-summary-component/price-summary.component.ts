@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-price-summary-component',
+  selector: 'app-price-summary',
   standalone: true,
-  imports: [],
+  imports: [CommonModule], // Certifique-se de que CommonModule está importado
   templateUrl: './price-summary.component.html',
-  styleUrl: './price-summary.component.scss'
+  styleUrls: ['./price-summary.component.scss']
 })
 export class PriceSummaryComponent {
-
+  @Input() totalPrice: number = 0;
 }

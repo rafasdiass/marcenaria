@@ -1,0 +1,23 @@
+.workshop-container {
+    padding: 2rem;
+  }
+  
+  .steps-navigation {
+    margin-bottom: 2rem;
+  
+    button {
+      margin-right: 1rem;
+      &.active {
+        background-color: #0056b3;
+        color: #fff;
+      }
+    }
+  }
+  
+  .step-content {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+  }
+  

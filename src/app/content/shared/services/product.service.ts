@@ -5,6 +5,7 @@ import { ProductModel } from '../models/product-model';
   providedIn: 'root'
 })
 export class ProductService {
+
   private kitchenProducts: ProductModel[] = [
     {
       id: '1',
@@ -30,7 +31,6 @@ export class ProductService {
       modelPath: 'assets/models/conjunto-inferior.obj',
       room: 'kitchen'
     }
-    // Outros produtos da cozinha
   ];
 
   private bedroomProducts: ProductModel[] = [
@@ -50,10 +50,8 @@ export class ProductService {
       modelPath: 'assets/models/guarda-roupa.obj',
       room: 'bedroom'
     }
-    // Outros produtos do quarto
   ];
 
-  // Arrays para outros cômodos, como bathroom, living-room, office, etc.
   private bathroomProducts: ProductModel[] = [
     // Produtos do banheiro
   ];
@@ -66,28 +64,24 @@ export class ProductService {
     // Produtos do escritório
   ];
 
-  // Métodos para obter produtos de cada cômodo
-  getKitchenProducts(): ProductModel[] {
-    return this.kitchenProducts;
+  // Métodos para obter produtos específicos de cada cômodo
+  getProductsByRoom(room: string): ProductModel[] {
+    switch (room.toLowerCase()) {
+      case 'kitchen':
+        return this.kitchenProducts;
+      case 'bedroom':
+        return this.bedroomProducts;
+      case 'bathroom':
+        return this.bathroomProducts;
+      case 'living-room':
+        return this.livingRoomProducts;
+      case 'office':
+        return this.officeProducts;
+      default:
+        return [];
+    }
   }
 
-  getBedroomProducts(): ProductModel[] {
-    return this.bedroomProducts;
-  }
-
-  getBathroomProducts(): ProductModel[] {
-    return this.bathroomProducts;
-  }
-
-  getLivingRoomProducts(): ProductModel[] {
-    return this.livingRoomProducts;
-  }
-
-  getOfficeProducts(): ProductModel[] {
-    return this.officeProducts;
-  }
-
-  // Método para obter um produto por ID, independentemente do cômodo
   getProductById(id: string): ProductModel | undefined {
     const allProducts = [
       ...this.kitchenProducts,

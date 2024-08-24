@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ProductModel } from '../../../../shared/models/product-model';
 
 @Component({
   selector: 'app-product-summary',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './product-summary.component.html',
-  styleUrl: './product-summary.component.scss'
+  styleUrls: ['./product-summary.component.scss']
 })
 export class ProductSummaryComponent {
-
+  @Input() product: ProductModel | undefined;
 }

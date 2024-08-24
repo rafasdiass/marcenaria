@@ -1,1 +1,26 @@
-<p>product-configuration-component works!</p>
+<div class="container product-configuration mt-5">
+    <h2 class="mb-4 text-center">Configuração do Produto</h2>
+  
+    <div class="form-group">
+      <label for="productSelect" class="form-label">
+        <i class="bi bi-box-seam"></i> Escolha um Produto:
+      </label>
+      <select id="productSelect" class="form-select" (change)="onProductSelect($event)">
+        <option *ngFor="let product of products" [value]="product.id">
+          {{ product.name }}
+        </option>
+      </select>
+    </div>
+  
+    <app-dimensions-input 
+      [dimensions]="dimensions" 
+      (dimensionsChange)="onDimensionsChange($event)">
+    </app-dimensions-input>
+  
+    <app-model-viewer 
+      *ngIf="selectedProduct" 
+      [product]="selectedProduct" 
+      [dimensions]="dimensions">
+    </app-model-viewer>
+  </div>
+  

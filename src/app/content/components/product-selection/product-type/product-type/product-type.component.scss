@@ -1,0 +1,55 @@
+@import '../../../../../../styles.scss'; // Corrigido o caminho do import
+
+// Estilos específicos para o componente de tipo de produto
+.product-type-container {
+  h4 {
+    font-weight: $font-weight-bold;
+    color: $text-color-dark;
+    margin-bottom: 1.5rem;
+    font-size: $font-size-large;
+  }
+
+  .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: $border-radius-default;
+    border: 1px solid $border-color-light;
+    box-shadow: $box-shadow-default;
+    padding: $padding-default;
+
+    &:hover {
+      background-color: $bg-color-light;
+      transform: translateY(-2px);
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: #fff;
+
+      h5, p {
+        color: #fff;
+      }
+
+      .badge {
+        background-color: $primary-hover-color;
+      }
+    }
+
+    h5 {
+      margin-bottom: 0.25rem;
+      font-size: $font-size-base;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: $font-size-small;
+      color: $secondary-color;
+    }
+
+    .badge {
+      font-size: $font-size-base;
+      padding: 0.5rem 0.75rem;
+      border-radius: $border-radius-default;
+    }
+  }
+}

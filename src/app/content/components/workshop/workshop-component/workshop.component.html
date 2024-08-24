@@ -1,1 +1,54 @@
-<p>workshop-component works!</p>
+<div class="workshop-container">
+    <h1>Configuração de Móveis Sob Medida</h1>
+  
+    <div class="steps-navigation">
+      <button
+        class="btn btn-primary"
+        (click)="navigateToRoomSelection()"
+        [class.active]="isStep('rooms')"
+      >
+        <i class="bi bi-house-door"></i> Selecionar Cômodo
+      </button>
+      <button
+        class="btn btn-primary"
+        (click)="navigateToProductSelection()"
+        [class.active]="isStep('product-selection')"
+      >
+        <i class="bi bi-box-seam"></i> Selecionar Produto
+      </button>
+      <button
+        class="btn btn-primary"
+        (click)="navigateToProductConfiguration()"
+        [class.active]="isStep('product-configuration')"
+      >
+        <i class="bi bi-gear"></i> Configurar Produto
+      </button>
+      <button
+        class="btn btn-primary"
+        (click)="navigateToSummary()"
+        [class.active]="isStep('summary')"
+      >
+        <i class="bi bi-list-check"></i> Resumo do Pedido
+      </button>
+    </div>
+  
+    <div class="step-content">
+      <!-- Exibir conteúdo com base no passo atual -->
+      <ng-container *ngIf="isStep('rooms')">
+        <app-room></app-room> <!-- Chama o componente pai RoomComponent -->
+      </ng-container>
+  
+      <ng-container *ngIf="isStep('product-selection')">
+        <app-product-selection></app-product-selection> <!-- Chama o componente pai ProductSelectionComponent -->
+      </ng-container>
+  
+      <ng-container *ngIf="isStep('product-configuration')">
+        <app-product-configuration></app-product-configuration> <!-- Chama o componente pai ProductConfigurationComponent -->
+      </ng-container>
+  
+      <ng-container *ngIf="isStep('summary')">
+        <app-summary></app-summary> <!-- Chama o componente pai SummaryComponent -->
+      </ng-container>
+    </div>
+  </div>
+  

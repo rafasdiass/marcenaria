@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-price-display',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './price-display.component.html',
-  styleUrl: './price-display.component.scss'
+  styleUrls: ['./price-display.component.scss']
 })
 export class PriceDisplayComponent {
-
+  @Input() totalPrice: number = 0;
 }

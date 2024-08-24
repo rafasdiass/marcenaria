@@ -1,7 +1,13 @@
-<div class="dimensions-container">
-    <div *ngFor="let measure of measures" class="dimension-input">
-      <label [for]="measure.label">{{ measure.label }} ({{ measure.unit }})</label>
-      <input type="number" [id]="measure.label" [(ngModel)]="measure.value" (input)="onMeasureUpdate()" />
-    </div>
+<div class="dimensions-summary card">
+  <div class="card-header">
+    <h4><i class="bi bi-rulers"></i> Resumo das Dimensões</h4>
   </div>
-  
+  <div class="card-body">
+    <ul class="list-group">
+      <li *ngFor="let measure of measures" class="list-group-item d-flex justify-content-between align-items-center">
+        {{ measure.label }}:
+        <span class="badge bg-primary rounded-pill">{{ measure.value }} {{ measure.unit }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
