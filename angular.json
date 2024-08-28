@@ -96,9 +96,16 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/all.min.css",
+              "src/assets/css/tailwind.css",
+              "src/assets/css/marcenaria.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/jquery.singlePageNav.min.js",
+              "src/assets/js/parallax.min.js"
+            ]
           }
         }
       }
