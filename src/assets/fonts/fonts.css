@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Fonts';
+    src: url('../fonts/font.woff2') format('woff2'),
+         url('../fonts/font.woff') format('woff'),
+         url('../fonts/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Adicione mais regras @font-face se necessário para outros pesos ou estilos */
+  
