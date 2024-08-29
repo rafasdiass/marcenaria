@@ -1,10 +1,10 @@
-<div class="home-container">
+<div class="home-container mx-auto px-2 tm-intro-width">
     <!-- Hero Section -->
     <section class="hero">
-      <div class="overlay">
-        <div class="hero-content">
-          <h1>Crie Ambientes Exclusivos com Móveis Sob Medida</h1>
-          <p>Descubra soluções personalizadas para cada espaço da sua casa.</p>
+      <div class="overlay sm:pb-60 sm:pt-48 py-20">
+        <div class="hero-content bg-white bg-opacity-70 p-12 mb-5 text-center">
+          <h1 class="text-5xl tm-logo-font mb-5">Crie Ambientes Exclusivos com Móveis Sob Medida</h1>
+          <p class="tm-text-gold tm-text-2xl">Descubra soluções personalizadas para cada espaço da sua casa.</p>
           <img src="src/assets/images/hero-image.jpg" alt="Hero Image">
           <a routerLink="/product-selection" class="cta-button">Explore Nossos Projetos</a>
         </div>
@@ -12,30 +12,84 @@
     </section>
   
     <!-- Quick Links Section -->
-    <section class="quick-links">
-      <h2>Ambientes Personalizados</h2>
-      <div class="links">
-        <a routerLink="/kitchen" class="link-item">
-          <div class="link-image" style="background-image: url('assets/images/kitchen.jpg');"></div>
-          <span>Cozinha</span>
+    <section class="quick-links bg-white bg-opacity-70 p-10 mb-5 flex flex-col lg:flex-row justify-around items-center">
+      <h2 class="text-white leading-8 text-sm font-light text-center mb-16">Ambientes Personalizados</h2>
+      <div class="links parallax-window container mx-auto tm-container py-24 sm:py-48 flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container" data-parallax="scroll" data-image-src="img/antique-cafe-bg-02.jpg" >
+        <a routerLink="/kitchen" class="link-item flex items-start mb-6 tm-menu-item">
+          <div class="link-image rounded-md" style="background-image: url('assets/images/kitchen.jpg');"></div>
+          <span class="text-center mb-16 bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md ml-3 sm:ml-6 text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Cozinha</span>
         </a>
-        <a routerLink="/bedroom" class="link-item">
-          <div class="link-image" style="background-image: url('assets/images/bedroom.jpg');"></div>
-          <span>Quarto</span>
+        <a routerLink="/bedroom" class="link-item flex items-start mb-6 tm-menu-item">
+          <div class="link-image rounded-md" style="background-image: url('assets/images/bedroom.jpg');"></div>
+          <span class="text-center mb-16 bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md ml-3 sm:ml-6 text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Quarto</span>
         </a>
-        <a routerLink="/bathroom" class="link-item">
-          <div class="link-image" style="background-image: url('assets/images/bathroom.jpg');"></div>
-          <span>Banheiro</span>
+        <a routerLink="/bathroom" class="link-item flex items-start mb-6 tm-menu-item">
+          <div class="link-image rounded-md" style="background-image: url('assets/images/bathroom.jpg');"></div>
+          <span class="text-center mb-16 bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md ml-3 sm:ml-6 text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Banheiro</span>
         </a>
-        <a routerLink="/living-room" class="link-item">
-          <div class="link-image" style="background-image: url('assets/images/living-room.jpg');"></div>
-          <span>Sala de Estar</span>
+        <a routerLink="/living-room" class="link-item flex items-start mb-6 tm-menu-item">
+          <div class="link-image rounded-md" style="background-image: url('assets/images/living-room.jpg');"></div>
+          <span class="text-center mb-16 bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md ml-3 sm:ml-6 text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Sala de Estar</span>
         </a>
-        <a routerLink="/office" class="link-item">
-          <div class="link-image" style="background-image: url('assets/images/office.jpg');"></div>
-          <span>Escritório</span>
-        </a>
+        <a routerLink="/office" class="link-item flex items-start mb-6 tm-menu-item">
+          <div class="link-image rounded-md" style="background-image: url('assets/images/office.jpg');"></div>
+          <span class="text-center mb-16 bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md ml-3 sm:ml-6 text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Escritório</span>
+        </a>        
+        <a class="text-center mb-16 bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md" rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">send us a message</a>
       </div>
-    </section>
-  </div>
+      <div class="text-center">
+        <div class="inline-block">
+            <a href="#menu" class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
+                <i class="fas fa-coffee mr-3"></i>
+                <span class="text-center mb-16 bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Let's explore...</span>                        
+            </a>
+        </div>                    
+    </div>  
+  </section> 
+
+   <section>
+    <div id="contact" class="parallax-window relative" data-parallax="scroll" data-image-src="img/antique-cafe-bg-04.jpg">
+      <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+          <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+              <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                  <h2 class="text-3xl mb-6 tm-text-green">Contact Us</h2>
+                  <p class="mb-6 text-lg leading-8">
+                      Praesent tellus magna, consectetur sit amet volutpat eu, pulvinar vitae sem.
+                      Sed ultrices. bg white 80% alpha. btn #066    
+                  </p>
+                  <p class="mb-10 text-lg">
+                      <span class="block mb-2">Tel: <a href="tel:0100200340" class="hover:text-yellow-600 transition">010-020-0340</a></span>
+                      <span class="block">Email: <a href="mailto:info@company.com" class="hover:text-yellow-600 transition">info&#64;company.com</a></span>                        
+                  </p>
+                  <div class="text-center">
+                      <a href="https://www.google.com/maps" class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green">
+                          <i class="fas fa-map-marked-alt mr-8"></i>
+                          Open Maps
+                      </a>
+                  </div>                    
+              </div>
+              <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
+                  <form action="" method="POST" class="text-lg">
+                      <input type="text" name="name" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Name" required="" />
+                      <input type="email" name="email" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Email" required="" />
+                      <textarea rows="6" name="message" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Message..." required=""></textarea>
+                      <div class="text-right">
+                          <button type="submit" class="text-white hover:text-yellow-500 transition">Send it</button>
+                      </div>                        
+                    </form>
+              </div>
+          </div>
+          <footer class="absolute bottom-0 left-0 w-full">
+              <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
+                  <span>Copyright 2022 Antique Cafe. All rights reserved.</span>
+                  <span class="mt-5 md:mt-0">Design: <a href="https://www.tooplate.com" target="_parent">Tooplate</a></span>
+              </div>                
+          </footer>
+      </div>        
+  </div> 
+</section> 
+
+
+  
+
   
